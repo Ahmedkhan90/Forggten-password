@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form onsubmit="return signup()">
+<fieldset class="frm">
+<legend>Sign Up Here</legend>
+    <label>User Name :</label>
+    <br>
+    <input type="text" class="input" name="name" id="aname" required placeholder="User Name">
+    <br>
+    <label>Email :</label>
+    <br>
+    <input type="email" class="input" name="email" id="email" required placeholder="Email Adress">
+    <br>
+    <label>Password :</label>
+    <br>
+    <input type="password" class="input" name="password" id="password" required placeholder="Password">
+    <br>
+    <label>Phone :</label>
+    <br>
+    <input type="number" class="input" name="number" id="number" required placeholder="Phone Number">
+    <br>
+    <label>Gender :</label>
+    <br>
+    <select name="Gender" class="input" id="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <br>
+    <button>Submit</button>
+</fieldset>
+</form>
+<script src="app.js"></script>
+</body>
+
+</html>
