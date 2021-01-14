@@ -1,6 +1,27 @@
 .frm{
     width: 300px;
+    margin-top: 120px;
+    margin-left: 500px;
+    box-shadow: 10px 10px 10px 10px;
+    text-size-adjust: larger;
+    text-decoration: solid;
+    font-size: large;
+    font-weight:bolder;
+
+
 }
+
+/* legend{
+    border: 1px solid;     
+    box-shadow: 5px 5px 5px;
+
+} */
 .input{
     width: 300px;
+    height: 20px;
+}
+.btn{
+    width: 250px;
+    height: 30px;
+    margin-left: 20px;
 }

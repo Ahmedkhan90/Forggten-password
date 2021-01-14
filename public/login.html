@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form onsubmit="return login()">
+    <form onsubmit="return login()" class="frm">
         <fieldset>
-<legend>Log Isn</legend>
+<legend>Log In</legend>
             <label>Email :</label>
             <br>
             <input type="email" name="email" id="email" required placeholder="Email Adress">
             <br>
-            <br>
             <label>Password :</label>
-            <br>
             <br>
             <input type="password" name="password" id="password" required placeholder="Password">
             <br>
-            <br>
-            <button>Login</button>
+            <button class="btn1">Login</button>
+            <a href="index.html">Sign Up</a>
         </fieldset>
         </form>
     <script src="app.js"></script>
