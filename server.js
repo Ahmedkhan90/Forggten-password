@@ -17,13 +17,13 @@ var app = express();
 
 app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(morgan('dev'));
 
 app.use(cors({
     origin: '*',
     credentials: true
 }));
 
-app.use(morgan('dev'));
 
 
 app.get("/download", (req, res) => {
