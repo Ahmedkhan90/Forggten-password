@@ -40,7 +40,7 @@ api.post("/signup", (req, res, next) => {
                 bcrypt.stringToHash(req.body.password).then(function (hash) {
 
                     var newUser = new userModel({
-                        "name": req.body.name,
+                        "name": req.body.aname,
                         "email": req.body.email,
                         "password": hash,
                         "phone": req.body.phone,
@@ -49,12 +49,13 @@ api.post("/signup", (req, res, next) => {
                     newUser.save((err, data) => {
                         if (!err) {
                             res.send({
-                                message: "user created"
+                                message: "user created",
+                                status : 200
                             })
                         } else {
                             console.log(err);
                             res.status(500).send({
-                                message: "user create error, " + err
+                                message: "user create error " + JSON.stringify(err),
                             })
                         }
                     });
